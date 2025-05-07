@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .card-item{
+      display: inline-block;
+      border:1px solid #000;
+      padding:0;
+      border-radius: 5px;
+    }
+
+    .card-item .card-header{
+      background-color: rgba(0,0,0,.7);
+      color: white;  
+      padding:5px;
+    }
+
+    .card-item .card-header h3{
+      margin: 0;
+      padding: 0;
+    }
+
+    .card-item .card-footer{
+      background-color: rgba(0,0,0,.7);
+      color: white;  
+      padding:5px;
+    }
+
+    .post-wrapper{
+      display: flex;
+      gap:40px;
+    }
+
+    .post-wrapper .post{
+      border:1px solid #000;
+      padding:0;
+      border-radius: 5px;
+    }
+
+    .post-wrapper .post .post-header{
+      background-color: blue;
+    }
+
+    .post-wrapper .post .post-header h2{
+      color:white;
+      margin: 0;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .post-wrapper .post .post-content, 
+    .post-wrapper .post .post-footer{
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- La semántica en HTML ayuda al navegador y al desarrollador a saber mejor cómo está armado un contenido-->
+
+  <!-- Este header es el principal de mi sitio -->
+  <header id="mastheader">
+    <section id="introduccion">
+      <h1>Introducción semántica HTML</h1>
+      
+      <p>Al tener elementos semánticos podemos tener el contenido mejor administrado y ayuda a los screen readers, browsers y devs a leer mejor el código</p>
+
+      <p>por ejemplo en la siguiente tarjeta :</p>
+
+      <!-- Creamos un elemento de card -->
+       <div class="card-item">
+        <header class="card-header">
+          <h3>Esta es la cabeza de nuestra card</h3>
+        </header>
+        <main class="card-content">
+          <p>Aquí va el contenido de la card</p>
+        </main>
+        <footer class="card-footer">
+          Este será el pie de nuestra card
+        </footer>
+       </div>
+    </section>
+  </header>
+
+  <section id="posts">
+    <h2>Este sería el ejemplo de un blog</h2>
+
+    <main class="post-wrapper">
+      <article class="post">
+        <header class="post-header">
+          <h2>Título del post</h2>
+        </header>
+        <main class="post-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur recusandae dicta debitis dolores cupiditate quibusdam, tempore itaque libero possimus necessitatibus iusto non autem maxime animi aliquam rem explicabo aliquid consequatur.</p>
+          <a href="">Link</a>
+        </main>
+        <footer class="post-footer">
+          Escrito el : <time datetime="2025-06-15">15 de junio de 2025</time>
+        </footer>
+      </article>
+  
+      <article class="post">
+        <header class="post-header">
+          <h2>Título del post</h2>
+        </header>
+        <main class="post-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur recusandae dicta debitis dolores cupiditate quibusdam, tempore itaque libero possimus necessitatibus iusto non autem maxime animi aliquam rem explicabo aliquid consequatur.</p>
+          <a href="">Link</a>
+        </main>
+        <footer class="post-footer">
+          Escrito el : <time datetime="2025-06-15">15 de junio de 2025</time>
+        </footer>
+      </article>
+  
+      <article class="post">
+        <header class="post-header">
+          <h2>Título del post</h2>
+        </header>
+        <main class="post-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur recusandae dicta debitis dolores cupiditate quibusdam, tempore itaque libero possimus necessitatibus iusto non autem maxime animi aliquam rem explicabo aliquid consequatur.</p>
+          <a href="">Link</a>
+        </main>
+        <footer class="post-footer">
+          Escrito el : <time datetime="2025-06-15">15 de junio de 2025</time>
+        </footer>
+      </article>
+    </main>
+  </section>
+</body>
+</html>

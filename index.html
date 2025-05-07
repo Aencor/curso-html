@@ -1,12 +1,162 @@
 <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso Base HTML</title>
-  </head>
-  <body>
-    <h1>Encabezados</h1>
-    <h2>Subtítulos</h2>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso Base HTML</title>
+  
+  <!-- Prism CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.css" rel="stylesheet" />
+
+  <!-- Prism JS -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js"></script>
+</head>
+<body>
+
+  <h2>Elementos de una etiqueta</h2>
+
+  <p>Una etiqueta de HTML por lo general tiene una apertura y un cierre</p>
+
+  <p>Ej:</p>
+  <pre class="line-numbers"><code class="language-html" id="code-1"></code></pre>
+
+  <h2>Etiquetas Inline</h2>
+
+  <h3>a - referencias e hipervínculos</h3>
+
+  <p>
+    La etiqueta "a" sirve para poner enlaces <a href="#">como este</a>. Se compone de lo siguiente:
+  </p>
+
+  <pre class="line-numbers"><code class="language-html" id="code-2"></code></pre>
+
+  <h3>strong - Negritas</h3>
+
+  <p>
+    La etiqueta <strong>strong</strong> se usa para agregar <strong>negritas</strong>
+  </p>
+
+  <h3>em - Italicas</h3>
+
+  <p>
+    La etiqueta <em>em</em> se usa para agregar <em>italicas</em>
+  </p>
+
+
+
+  <h3>u - subrayado</h3>
+
+  <p>
+    La etiqueta <u>u</u> se usa para agregar <u>subrayado</u>
+  </p>
+
+  <h3>span - comodín</h3>
+
+  <p>
+    La etiqueta span es usada como un comodín para poder segmentar o contener una parte del texto y agregarle algo después, es muy útil cuando buscas estilizar contenido, por ejemplo este texto va a ser todo en <span style="text-transform:uppercase;">mayúsculas</span>
+  </p>
+
+  <pre class="line-numbers"><code class="language-html" id="code-4"></code></pre>
+
+
+  <h3>label - Título de Inputs en formularios</h3>
+
+  <p>
+    La etiqueta label se utiliza sobretodo en formularios para indicar el título de un input
+  </p>
+
+  <form>
+    <label>Nombre</label> <input type="text" placeholder="Nombre">
+  </form>
+
+  <pre class="line-numbers"><code class="language-html" id="code-3"></code></pre>
+
+  <h2>Etiquetas de Bloque</h2>
+
+  <p>Son etiquetas que tal como su nombre lo indica crean bloques de contenido y ocupan todo el espacio de la pantalla</p>
+
+  <h3>div - Crea divisiones como si fueran bloques de Lego y tiene sub etiquetas que sirven de forma semántica: </h3>
+
+  <ul>
+    <li>header - sirve para poner bloques de encabezados de contenido </li>
+    <li>footer - sirve para poner bloques de pie de contenido</li>
+    <li>main - sirve para poner bloques de contenido principal</li>
+    <li>aside - sirve para poner bloques de contenido que no son referentes al bloque principal</li>
+    <li>nav - sirve para poner bloques de navegación</li>
+  </ul>
+
+  <h3>ul, ol - Etiquetas de listas</h3>
+
+  <h4>ul - unordered lists</h4>
+
+  <ul>
+    <li>Estas listas tienen viñetas</li>
+    <li>para separar elementos</li>
+  </ul>
+
+
+  <pre class="line-numbers"><code class="language-html" id="code-6"></code></pre>
+  
+  <h4>ol - ordered lists</h4>
+  <p>
+    Los elementos ol y ul, llevan sub elemento li que es una etiqueta de linea
+  </p>
+  <ol>
+    <li>Estas listas tienen números</li>
+    <li>para separar elementos</li>
+  </ol>
+
+  <pre class="line-numbers"><code class="language-html" id="code-7"></code></pre>
+  <script>
+    document.getElementById("code-1").textContent = `<p>
+  Este es un párrafo
+</p>
+
+<p class="clase-1">
+  Este parrafo tiene un atributo que se llama class y su valor es clase-1
+</p>
+
+Hay otros ejemplos de atributos que son : 
+
+style, id, data, target, etc...
+`;
+
+    document.getElementById("code-2").textContent = `
+<a 
+  href="https://example.com"
+  target="_blank"
+  role="link"
+>
+  <!-- 
+    Con 3 atributos 
+    href : El enlace al que va a enviar la etiqueta
+    target : Si abre en la misma pestaña o en otra, _blank es para otra, _self es para la misma, self está por default
+    role : Que rol juega este link en la página, puede ser un enlace, botón, cta, etc....  
+  -->
+  Link
+</a>
+`;
+
+document.getElementById("code-3").textContent = `<form>
+    <label>Nombre</label> <input type="text" placeholder="Nombre">
+  </form>
+`;
+
+document.getElementById("code-4").textContent = `<span style="text-transform:uppercase;">mayúsculas</span>
+`;
+
+document.getElementById("code-6").textContent = `<ul>
+    <li>Estas listas tienen viñetas</li>
+    <li>para separar elementos</li>
+  </ul>`;
+
+  document.getElementById("code-7").textContent = `<ol>
+    <li>Estas listas tienen números</li>
+    <li>para separar elementos</li>
+  </ol>`;
+  </script>
+
+</body>
 </html>

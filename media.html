@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multimedia</title>
+</head>
+<body>
+  <h2>Imágenes</h2>
+  <p>
+    Las imágenes en HTML se agregan con la etiqueta <code>&lt;img&gt;</code> y tiene los siguientes atributos principales :
+
+    <ul>
+      <li>src : la fuente de la imagen, puede ser local o pública</li>
+      <li>alt : Texto alternativo de la imagen para casos en que no cargue o para screen readers</li>
+      <li>title : Título de la imagen para screen readers</li>
+      <li>description : Descripción de la imagen para screen readers</li>
+      <li>width : Ancho de la imagen</li>
+      <li>height : Alto de la imagen</li>
+    </ul>
+
+    <!-- Ejemplo con imagen externa, sólo debes poner la URL de la imagen -->
+    <img 
+      src="https://scontent.fmex28-1.fna.fbcdn.net/v/t39.30808-6/494099374_669420622538154_768543327751980421_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHl7zBkqW9RyGaHrmeBy6tUFrKqo7FYelEWsqqjsVh6UQDy9xYBhsSSuvSoDFXTDYg&_nc_ohc=_CBXVEgt-jEQ7kNvwE_12Ud&_nc_oc=AdlnWLeIal2xuqUrEBtPRNVxwUaZbjaQETxuW5KkpetkHRH0G36odT35tWIlXJ_p0ru43q861kQUNSrk_PFSb-b-&_nc_zt=23&_nc_ht=scontent.fmex28-1.fna&_nc_gid=yLQGbwmzPdMJMgjER7UZ5Q&oh=00_AfKLem5SpxfeyyDZ3Xm1IiF9kP2PBxuZRHK9wdplrb0UDQ&oe=6821894B" 
+      alt="Camus el Fresco"
+      description="Camus el Fresco"
+      title="Camus el Fresco"
+      width="200"
+    >
+
+    <!-- Ejemplo con imagen en tu folder local -->
+    <img 
+      src="assets/img/TotK_-_Zelda_artwork_oficial.jpg" 
+      alt="Zelda TOTK"
+      description="Zelda TOTK"
+      title="Zelda TOTK"
+    >
+  </p>
+
+  <h2>
+    Video
+  </h2>
+
+  <video 
+    src="assets/video/video.mp4"
+    controls=""
+  >
+  </video>
+
+
+  <h2>
+    Audio
+  </h2>
+  <audio 
+    src="assets/video/video.mp4"
+    controls=""
+  >
+</audio>
+
+  <h2>Embeds</h2>
+
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2CKSa1Vwzjkb3Yf6QPq4Im?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/OjUBHVKy_5Q?si=SIHCCBJSkKqeqZn8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</body>
+</html>
